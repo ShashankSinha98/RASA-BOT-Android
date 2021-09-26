@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/spacing_xh"
+    android:layout_height="@dimen/spacing_xl"
+    android:layout_margin="@dimen/spacing_small"
+    android:background="@drawable/bg_bot_msg"
+    >
+
+    <com.shashank.rasabot.util.HorizontalDottedProgress
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+
+
+</RelativeLayout>

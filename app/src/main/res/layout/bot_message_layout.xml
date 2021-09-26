@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_small"
+    >
+
+    <TextView
+        android:id="@+id/bot_text_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:background="@drawable/bg_bot_msg"
+        android:gravity="center"
+        android:maxWidth="@dimen/spacing_xxh"
+        android:minHeight="@dimen/spacing_xl"
+        android:paddingLeft="@dimen/spacing_large"
+        android:paddingTop="@dimen/spacing_small"
+        android:paddingRight="@dimen/spacing_large"
+        android:paddingBottom="@dimen/spacing_small"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        tools:text="Hi! My name is Rasa" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_small"
+        app:cardCornerRadius="@dimen/spacing_small"
+        android:background="@drawable/bg_bot_msg">
+
+        <ImageView
+            android:id="@+id/bot_image_msg"
+            android:layout_width="@dimen/spacing_xxh"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:background="@drawable/bg_bot_msg"
+            android:layout_height="@dimen/spacing_xxh"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

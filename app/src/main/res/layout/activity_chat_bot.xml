@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".ChatBotActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/rasa_bot_icon_dimensions"
+                android:layout_height="@dimen/rasa_bot_icon_dimensions"
+                android:src="@drawable/chat_bot_icon"
+                />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xl"
+                android:text="RASA BOT"
+                android:textColor="@color/white"
+                />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/message_input_card_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        android:layout_marginBottom="@dimen/spacing_medium"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/message_input_card_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/light_blue"
+        app:cardCornerRadius="@dimen/spacing_medium"
+        android:layout_marginRight="@dimen/spacing_small"
+        android:layout_marginLeft="@dimen/spacing_small"
+        app:layout_constraintTop_toTopOf="@id/send_msg_btn"
+        app:layout_constraintBottom_toBottomOf="@id/send_msg_btn"
+        app:layout_constraintEnd_toStartOf="@id/send_msg_btn"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/message_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:background="@android:color/transparent"
+            android:hint="Enter your message..."/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/send_msg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:backgroundTint="@color/purple_500"
+        android:src="@drawable/msg_send_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/message_input_card_view"
+        app:rippleColor="@color/teal_200"
+        app:tint="@android:color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
