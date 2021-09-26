@@ -82,3 +82,31 @@ eg- {
 })
 
 4. click send and observer response.
+
+
+<img src="images/postman.PNG">
+
+
+<br />
+
+
+## Chat App
+
+I used retrofit inside my chat app to make POST request to RASA server and display response to user. I have used MVVM architecture to better organize my project and handle configuration changes. There are 3 types of views used in recycler view of chat conversation:
+
+1. user message
+2. bot message
+3. bot loading message
+
+<br/ >
+
+#### Libraries used - 
+- Retrofit
+- Gson
+- Glide
+- ViewModel
+- Material Design
+
+<br />
+
+Visit [here](https://github.com/cedextech/rasa-chatbot-templates), for pre-built rasa models.
