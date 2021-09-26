@@ -3,7 +3,13 @@
 <br />
 
 
-
+ | Mood Bot                            | Small Talk Bot                      |
+ |-------------------------------------|-------------------------------------|
+ |<img src="images/basic.png" width="450"> | <img src="images/st1.png" width="450">|
+ 
+ 
+ <br />
+ 
 I have made a simple chat application which sends user message to RASA server, and sends response back to user - both text and image. There are 2 main parts:
 
 
