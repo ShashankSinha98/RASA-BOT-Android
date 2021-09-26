@@ -2,15 +2,10 @@
 
 <br />
 
- | Demo                                |
- |-------------------------------------|
- |<img src="images/mood_bot_gif.gif" width="250"> |
-
-
 
  | Mood Bot                            | Small Talk Bot                      |
  |-------------------------------------|-------------------------------------|
- |<img src="images/basic.png" width="450"> | <img src="images/st1.png" width="450">|
+ |<img src="images/mood_bot.gif" width="350"> | <img src="images/st1.png" width="450">|
  
  
  <br />
