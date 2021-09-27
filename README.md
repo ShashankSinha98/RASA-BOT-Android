@@ -98,7 +98,7 @@ I used retrofit inside my chat app to make POST request to RASA server and displ
 2. bot message
 3. bot loading message
 
-<br/ >
+<br />
 
 #### Libraries used - 
 - Retrofit
@@ -106,6 +106,7 @@ I used retrofit inside my chat app to make POST request to RASA server and displ
 - Glide
 - ViewModel
 - Material Design
+- Executor Services
 
 <br />
 
